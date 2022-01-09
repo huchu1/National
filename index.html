@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+           $('.bxslider').bxSlider({
+               mode: 'horizontal', 
+               auto: true,
+               speed: 500,
+               pager: true,
+               controls: true,
+            });
+
+            $('#btn').on('click', function(){
+                $('.subbox').toggleClass('on');
+            })
+            
+            $('.close').on('click', function(){
+                $('.subbox').removeClass('on');
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="images/toplogo.png" alt="National Georgraphic"></a>
+            </h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">HOME</a> </li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">CHANNEL</a></li>
+                    <li><a href="#">VIDEO</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">MAGAZINES</a></li>
+                    <li>
+                       <button id="btn">
+                           <i class="fas fa-bars"></i>
+                       </button> 
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            <div class="subbox">
+                <button class="close"><i class="fas fa-arrow-right"></i></button>
+                <ul class="submenu">
+                    <li><a href="#">HOME</a> </li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">CHANNEL</a></li>
+                    <li><a href="#">VIDEO</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">MAGAZINES</a></li>
+                 </ul>
+            </div>
+        </header>
+        <div id="slider">
+            <ul class="slide bxslider">
+                <li><a href="#"><img src="images/slider_1.jpg" alt="1"></a>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <div class="caption">
+                        <h3>| store |</h3>
+                        <h4>내셔널지오그래픽 어패럴</h4>
+                        <p>20 SS COLLECTION</p>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/slider_2.jpg" alt="1"></a>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <div class="caption">
+                        <h3>| magazine |</h3>
+                        <h4>내셔널지오그래픽 매거진</h4>
+                        <p>8월호, 전 세계의 이주민들과 난민들</p>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/slider_3.jpg" alt="1"></a>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <div class="caption">
+                        <h3>| traveler magazine |</h3>
+                        <h4>내셔널지오그래픽 트래블러 매거진</h4>
+                        <p>12월호, delicious destinations | 전지적 야생동물시점</p>
+                    </div>
+                </li>
+                <li><a href="#"><img src="images/slider_4.jpg" alt="1"></a>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                    <div class="caption">
+                        <h3>| channel |</h3>
+                        <h4>늑대의 왕국</h4>
+                        <p>인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <section class="news">
+                <h2>news</h2>
+                <a href="#"><img src="images/news.jpg" alt="1"></a>
+                <span class="span1"></span>
+                <span class="span2"></span>
+                <span class="span3"></span>
+                <span class="span4"></span>
+                <div class="caption">
+                   <h3>| news |</h3>
+                   <h4>프리솔로</h4>
+                   <p>맨몸으로 절벽을 오르는 등반가</p> 
+                </div>
+            </section>
+            <section class="channel">
+                <h2>CHANNEL</h2>
+                <ul>
+                    <li><a href="#"><img src="images/channel_1.jpg" alt="1"></a>
+                        <span class="span5"></span>
+                        <div class="caption">
+                           <h3>| wild |</h3>
+                           <h4>늑대의 왕국</h4>
+                           <p>늑대의 왕국 인간의 발이 닿지 않는 곳, '북극의 정원'의 늑대</p>
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="images/channel_2.jpg" alt="2"></a>
+                        <span class="span5"></span>
+                        <div class="caption">
+                           <h3>| FOOD |</h3>
+                           <h4>고든 램지: 언차티드</h4>
+                           <p>고든 램지의 전세계 미식 로드 트립</p>
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="images/channel_3.jpg" alt="3"></a>
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                        <div class="caption">
+                           <h3>| shark fest |</h3>
+                           <h4>샤크 어택 5</h4>
+                           <p>바다 최고의 포식자, 상어가 돌아왔다</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="magazine">
+                <h2>magazine</h2>
+                <ul>
+                    <li><a href="#"><img src="images/MAGAZINE_1.jpg" alt="1"></a>
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                        <div class="caption">
+                        <h3>| magazine |</h3>
+                        <h4>내셔널지오그래픽 매거진</h4>
+                        <p>10월호, 전 세계의 이주민들과 난민들</p>
+                        </div>
+                    </li>
+                    <li><a href="#"><img src="images/MAGAZINE_2.jpg" alt="2"></a>
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                        <div class="caption">
+                        <h3>| traveler magazine |</h3>
+                        <h4>내셔널지오그래픽 트래블러 매거진</h4>
+                        <p>12월호, delicious destinations | 전지적 야생동물시점</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <div class="menu_undo clear">
+                <p>COPYRIGHT © 2018 NATIONAL GEOGRAPHIC KOREA LLT. ALL RIGHT RESERVED</p>
+                <ul class="iconbox">
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
